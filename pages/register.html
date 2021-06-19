@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登陆页面</title>
+    <!-- 网站图标 -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <!-- 初始化css文件：用来将所有浏览器中显示不一样的样式，变的一样 -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- 引入bootstrap -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <!-- 公共样式 -->
+    <!-- <link rel="stylesheet" href="../css/common.css"> -->
+    <!-- 当前文件的css -->
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- 引入js的库 -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- 引入bootstrap.js，bootstrap的js需要依赖一个js库 -->
+    <script src="../js/bootstrap.js"></script>
+    <!-- 引入ajax和cookie文件 -->
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+    <!-- 引入表单校验插件 -->
+    <script src="../js/validate/jquery.validate.min.js"></script>
+    <script src="../js/validate/localization/messages_zh.min.js"></script>
+    <!-- 引入弹出层插件 -->
+    <script src="../js/layer/layer.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+
+    <div class="header">
+        <div class="main">
+            <div class="logo">
+                <a href="#"><img src="../images/Siemens/pic37.jpg" alt=""></a>
+            </div>
+            <div class="header-right1">
+                <p><a href="#" style="color:#6e7f8c">中国</a></p>
+            </div>
+            <div class="header-right2">
+                <p><a href="#">西门子家电</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="nav">
+        <div class="main">
+            <ul>
+                <li><a href="#"></a>首页</a></li>
+                <li><a href="#"></a>灵感点亮生活</a></li>
+                <li><a href="#"></a>家电产品</a></li>
+                <li><a href="#"></a>客户服务</a></li>
+                <li><a href="#"></a>我的西门子家电</a></li>
+                <li><a href="#"></a>更多精彩</a></li>
+                <p><a href="#"></a>首页</a></p>
+                <span></span>
+            </ul>
+            <form class="nav-right">
+                <span class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                </span>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="login">
+            <a href="#">门店地址</a>
+
+            <a href="#">我的购物车</a>
+            <div class="self">
+                <a href="#" class="myself">我的西门子家电</a>
+                <ul>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                    <!-- <li><a href="#">注册我的家电</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="content">
+            <h1 class="text-center">西门子 <small>注册页面</small></h1>
+            <form class="form-horizontal register">
+                <span>用&nbsp;&nbsp;户&nbsp;&nbsp;名:</span><input type="text" name="username" class="form-control1"
+                    placeholder="用户名"><br>
+                <span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</span><input type="password" class="form-control1"
+                    name="password" placeholder="密码"><br>
+                <span>确认密码:</span><input type="password" class="form-control1" name="repass" placeholder="确认密码"><br>
+                <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span><input type="text" class="form-control1"
+                    name="email" placeholder="邮箱"><br>
+                <span>手&nbsp;&nbsp;机&nbsp;&nbsp;号:</span><input type="text" class="form-control1" name="tel"
+                    placeholder="手机号"><br>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="agree"> 请同意协议
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-default submit">注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="more">
+            <div class="main">
+                <div>
+                    <pre>
+                      <hr>  
+                    </pre>
+                    <ol class="oll">
+                        <li>
+                            <dl>
+                                <dt>服务</dt>
+                                <dd>联系方式</dd>
+                                <dd>在线咨询</dd>
+                                <dd>安装指导</dd>
+                                <dd>使用指导</dd>
+                                <dd>清洁保养</dd>
+                                <dd>问题自检</dd>
+                                <dd>产品手册</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>购物指南</dt>
+                                <dd>购物流程</dd>
+                                <dd>支付说明</dd>
+                                <dd>配送说明</dd>
+                                <dd>线上店铺</dd>
+                                <dd>公示信息</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>我的西门子家电</dt>
+                                <dd>产品注册</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>公司注册</dt>
+                                <dd>公司发展</dd>
+                                <dd>新闻稿</dd>
+                                <dd>媒体联系人</dd>
+                            </dl>
+                        </li>
+                    </ol>
+                    <pre>
+                        <hr>  
+                    </pre>
+                </div>
+            </div>
+        </div>
+                <div class="footer">
+                    <div class="main">
+                        <i style="margin-left:100px;">&copy;BSH Home Appliances Group.BSH集团是西门子股份公司的商标被许可方</i>
+                        <i style="margin-left:60px;">苏ICP备14031728号</i>
+                        <i>|</i>
+                        <a href="#">隐私保密规定</a>
+                        <i>|</i>
+                        <a href="#">使用条款</a>
+                        <i>|</i>
+                        <a href="#">交易条款</a>
+                        <i>|</i>
+                        <a href="#">工商营业执照公示</a><br>
+                        <i style="margin-left:100px;">无线电发射设备销售备案</i>
+                    </div>
+                    
+                    </div>
+                </div>
+    
+            </div> -->
+</body>
+<script src="../js/register.js"></script>
+
+</html>
+<script>
+
+
+
+</script>
+<script>
+    $("li").mouseover(function () {
+        $('ul>p').stop().animate({
+            left: $(this).index() * $(this).width()
+        }, 100).text($(this).text()).next().stop().animate({
+            left: $(this).index() * $(this).width()
+        }, 100)
+    })
+</script>
+
+
+<script>
+    $(".self").click(function () {
+        $(this).find('ul').css("display", "inline-block")
+    })
+    $(".self").mouseleave(function () {
+        $(this).find('ul').css("display", "none")
+    })
+</script>
